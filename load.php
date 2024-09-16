@@ -23,6 +23,10 @@ spl_autoload_register('classAutoLoad');
     $ObjContent =new Content();
 
 
+    require "include/constant.php";
+require "include/dbconnection.php";
+
+$conn = new dbConnection(DBTYPE, HOSTNAME, DBPORT, HOSTUSER, HOSTPASS, DBNAME);
 
 
 
